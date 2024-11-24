@@ -1,0 +1,33 @@
+.lista-itens {
+    padding: 20px; /* Espaçamento interno */
+    list-style: none; /* Remove os marcadores da lista */
+    font-family: Arial, sans-serif; /* Define a fonte */
+  
+    h2 {
+      margin-bottom: 15px; /* Espaçamento inferior do título */
+    }
+  
+    li {
+      padding: 10px; /* Espaçamento interno de cada item */
+      margin-bottom: 5px; /* Espaçamento inferior entre os itens */
+      border: 1px solid #ddd; /* Borda sutil ao redor de cada item */
+      display: flex; /* Flexbox para alinhar os itens */
+      justify-content: space-between; /* Espaço entre os elementos no item */
+      align-items: center; /* Alinha verticalmente os itens */
+  
+      button {
+        margin-left: 10px; /* Espaço entre o texto e o botão */
+        padding: 5px; /* Espaçamento interno do botão */
+        background-color: #f44336; /* Cor de fundo do botão */
+        color: white; /* Cor do texto do botão */
+        border: none; /* Remove a borda padrão do botão */
+        cursor: pointer; /* Aparece como um ponteiro quando o usuário passar o mouse */
+        border-radius: 4px; /* Bordas arredondadas no botão */
+  
+        &:hover {
+          background-color: #d32f2f; /* Cor do botão ao passar o mouse */
+        }
+      }
+    }
+  }
+  

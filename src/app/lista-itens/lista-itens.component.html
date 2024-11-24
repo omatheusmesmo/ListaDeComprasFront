@@ -1,0 +1,15 @@
+<div class="lista-itens">
+    <h2>Lista de Compras</h2>
+
+    <ul>
+        <li *ngFor="let item of itens; let i = index">
+            <span>{{item.nome}} - {{item.quantidade}} - {{item.categoria}} - {{item.comprado}}</span>
+
+            <button (click)="editarItem(i)">Editar</button>
+
+
+            <button (click)="excluirItem(i)">Excluir</button>
+
+        </li>
+    </ul>
+</div>
