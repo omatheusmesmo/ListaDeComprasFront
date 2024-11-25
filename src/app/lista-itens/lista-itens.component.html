@@ -1,15 +1,39 @@
 <div class="lista-itens">
-    <h2>Lista de Compras</h2>
-
-    <ul>
-        <li *ngFor="let item of itens; let i = index">
-            <span>{{item.nome}} - {{item.quantidade}} - {{item.categoria}} - {{item.comprado}}</span>
-
-            <button (click)="editarItem(i)">Editar</button>
-
-
-            <button (click)="excluirItem(i)">Excluir</button>
-
-        </li>
-    </ul>
-</div>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <h1>Lista de Compras</h1>
+    </header>
+  
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Categoria</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of itens; let i = index">
+            <td>{{ item.nome }}</td>
+            <td>{{ item.quantidade }}</td>
+            <td>{{ item.categoria }}</td>
+            <td>{{ item.comprado ? 'Comprado' : 'Pendente' }}</td>
+            <td>
+              <button (click)="editarItem(i)">Editar</button>
+              <button class="btn-delete" (click)="excluirItem(i)">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>&copy; 2024 Lista de Compras. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  

@@ -1,33 +1,79 @@
 .lista-itens {
-    padding: 20px; /* Espaçamento interno */
-    list-style: none; /* Remove os marcadores da lista */
-    font-family: Arial, sans-serif; /* Define a fonte */
-  
-    h2 {
-      margin-bottom: 15px; /* Espaçamento inferior do título */
-    }
-  
-    li {
-      padding: 10px; /* Espaçamento interno de cada item */
-      margin-bottom: 5px; /* Espaçamento inferior entre os itens */
-      border: 1px solid #ddd; /* Borda sutil ao redor de cada item */
-      display: flex; /* Flexbox para alinhar os itens */
-      justify-content: space-between; /* Espaço entre os elementos no item */
-      align-items: center; /* Alinha verticalmente os itens */
-  
-      button {
-        margin-left: 10px; /* Espaço entre o texto e o botão */
-        padding: 5px; /* Espaçamento interno do botão */
-        background-color: #f44336; /* Cor de fundo do botão */
-        color: white; /* Cor do texto do botão */
-        border: none; /* Remove a borda padrão do botão */
-        cursor: pointer; /* Aparece como um ponteiro quando o usuário passar o mouse */
-        border-radius: 4px; /* Bordas arredondadas no botão */
-  
-        &:hover {
-          background-color: #d32f2f; /* Cor do botão ao passar o mouse */
-        }
-      }
+  padding: 20px; /* Espaçamento interno */
+  font-family: Arial, sans-serif; /* Define a fonte */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o rodapé fique no fim da página */
+}
+
+h2 {
+  margin-bottom: 15px; /* Espaçamento inferior do título */
+}
+
+table {
+  width: 100%; /* Faz a tabela ocupar toda a largura */
+  border-collapse: collapse; /* Remove espaços entre bordas */
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Borda entre células */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 10px; /* Espaçamento interno das células */
+}
+
+th {
+  background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
+  font-weight: bold; /* Texto em negrito */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Cor alternada para linhas pares */
+}
+
+button {
+  margin: 0 5px; /* Espaço ao redor dos botões */
+  padding: 5px 10px; /* Espaçamento interno dos botões */
+  border: none; /* Remove bordas padrão */
+  border-radius: 4px; /* Deixa as bordas arredondadas */
+  color: #fff; /* Texto branco */
+  cursor: pointer; /* Exibe o ponteiro ao passar o mouse */
+  background-color: #007bff; /* Cor inicial do botão */
+
+  &:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+  }
+
+  &.btn-delete {
+    background-color: #f44336; /* Cor do botão Excluir */
+    
+    &:hover {
+      background-color: #d32f2f; /* Cor ao passar o mouse no botão Excluir */
     }
   }
-  
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #f44336; /* Cor de fundo para o cabeçalho */
+  color: #fff; /* Cor do texto */
+  text-align: center;
+  padding: 20px 0; /* Espaçamento interno */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #f4f4f4; /* Cor de fundo do rodapé */
+  text-align: center;
+  padding: 10px 0; /* Espaçamento interno */
+  font-size: 14px;
+  color: #555; /* Texto em cinza */
+}
+
+/* Main content section */
+.main-content {
+  flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+  padding: 20px;
+}
