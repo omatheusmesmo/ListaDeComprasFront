@@ -1,1 +1,33 @@
-<p>formulario-item works!</p>
+<div class="formulario-item">
+    <header>
+      <h1>Lista de Compras</h1>
+    </header>
+    <main>
+      <h2>Adicionar/Editar Item</h2>
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Nome do Item</mat-label>
+          <input matInput placeholder="Digite o nome do item" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Quantidade</mat-label>
+          <input matInput type="number" placeholder="Digite a quantidade" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Categoria</mat-label>
+          <input matInput placeholder="Digite a categoria" />
+        </mat-form-field>
+  
+        <div class="botoes">
+          <button mat-raised-button color="primary" type="submit">Salvar</button>
+          <button mat-button type="button">Cancelar</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      © 2024 Lista de Compras. Todos os direitos reservados.
+    </footer>
+  </div>
+  

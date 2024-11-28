@@ -1,0 +1,60 @@
+.formulario-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o rodapé fique no final da página */
+    font-family: Arial, sans-serif; /* Define a fonte */
+    padding: 20px;
+  
+    header {
+      background-color: #f44336; /* Cor de fundo do cabeçalho */
+      color: white;
+      padding: 10px;
+      text-align: center;
+  
+      h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+    }
+  
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  
+      h2 {
+        margin-bottom: 20px;
+      }
+  
+      form {
+        width: 100%;
+        max-width: 500px;
+  
+        mat-form-field {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+  
+        .botoes {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+  
+          button {
+            min-width: 120px;
+          }
+        }
+      }
+    }
+  
+    footer {
+      background-color: #f4f4f4; /* Cor de fundo do rodapé */
+      color: #666;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

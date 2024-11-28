@@ -8,23 +8,28 @@
 
 h2 {
   margin-bottom: 15px; /* Espaçamento inferior do título */
+  font-size: 24px; /* Mesma fonte do título em formulario-container */
+  color: #333; /* Cor do texto */
 }
 
 table {
   width: 100%; /* Faz a tabela ocupar toda a largura */
   border-collapse: collapse; /* Remove espaços entre bordas */
   margin-top: 20px;
+  flex: 1; /* Permite que a tabela cresça no espaço disponível */
 }
 
 th, td {
   border: 1px solid #ddd; /* Borda entre células */
   text-align: left; /* Alinha o texto à esquerda */
   padding: 10px; /* Espaçamento interno das células */
+  font-size: 16px; /* Tamanho de fonte consistente */
 }
 
 th {
   background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
   font-weight: bold; /* Texto em negrito */
+  color: #555; /* Mesma cor do formulario-container */
 }
 
 tr:nth-child(even) {
@@ -46,7 +51,7 @@ button {
 
   &.btn-delete {
     background-color: #f44336; /* Cor do botão Excluir */
-    
+
     &:hover {
       background-color: #d32f2f; /* Cor ao passar o mouse no botão Excluir */
     }
@@ -59,8 +64,9 @@ button {
   color: #fff; /* Cor do texto */
   text-align: center;
   padding: 20px 0; /* Espaçamento interno */
-  font-size: 24px;
+  font-size: 24px; /* Mesmo tamanho do formulário */
   font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
 }
 
 /* Rodapé */
@@ -70,10 +76,14 @@ button {
   padding: 10px 0; /* Espaçamento interno */
   font-size: 14px;
   color: #555; /* Texto em cinza */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave no topo */
 }
 
 /* Main content section */
 .main-content {
   flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente em telas menores */
 }
