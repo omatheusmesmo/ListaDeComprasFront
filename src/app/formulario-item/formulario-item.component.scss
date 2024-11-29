@@ -6,10 +6,13 @@
     padding: 20px;
   
     header {
-      background-color: #f44336; /* Cor de fundo do cabeçalho */
-      color: white;
-      padding: 10px;
-      text-align: center;
+    background-color: #f44336; /* Cor de fundo para o cabeçalho */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno */
+    font-size: 24px; /* Mesmo tamanho do formulário */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave  */
   
       h1 {
         margin: 0;
